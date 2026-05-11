@@ -19,7 +19,6 @@ git clone https://github.com/yourusername/taskify-tropical.git
 cd taskify-tropical
 
 ### 2. Install Dependencies
-Install PHP dependencies via Composer and JavaScript dependencies via NPM:
 composer install
 npm install
 
@@ -28,9 +27,9 @@ Copy the example environment file and generate an application key:
 cp .env.example .env
 php artisan key:generate
 
-### 4. Database Configuration
-1. Create a new database in your local SQL (e.g., MySQL/XAMPP) named taskify_db.
-2. Open the .env file and update your database credentials:
+### 4. Database & Session Configuration
+1. Buat database baru (misal: taskify_db) di MySQL/XAMPP.
+2. Update .env file:
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
@@ -38,19 +37,25 @@ php artisan key:generate
    DB_USERNAME=root
    DB_PASSWORD=
 
+3. 💡 **PENTING**: Jika muncul error terkait session/database saat pertama kali dijalankan, ubah Session Driver di .env menjadi:
+   SESSION_DRIVER=file
+
 ### 5. Run Migrations
-Run the migrations to create the necessary tables:
 php artisan migrate
 
 ### 6. Compiling Assets
-Run the development server for Vite to compile CSS and JS:
 npm run dev
 
 ### 7. Start the Server
-Open a new terminal and start the Laravel development server:
+Jika `php artisan serve` tidak bisa digunakan, gunakan alternatif perintah PHP native berikut:
+
+Pilihan A:
 php artisan serve
 
-Access the application at http://127.0.0.1:8000.
+Pilihan B (Alternatif):
+php -S 127.0.0.1:9999 -t public
+
+Akses aplikasi di http://127.0.0.1:8000 atau http://127.0.0.1:9999.
 
 ---
 
@@ -72,3 +77,4 @@ Access the application at http://127.0.0.1:8000.
 ---
 
 **Made with ❤️ by Priscilia King**
+Universitas Ciputra Surabaya
