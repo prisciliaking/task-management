@@ -43,6 +43,10 @@ php artisan key:generate
 ### 5. Run Migrations
 php artisan migrate
 
+### 5.5 Seed Database (Optional)
+Untuk mengisi data contoh (dummy data) agar tampilan tidak kosong:
+php artisan db:seed
+
 ### 6. Compiling Assets
 npm run dev
 
