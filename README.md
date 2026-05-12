@@ -2,11 +2,8 @@
 A vibrant and modern task management application built with Laravel 11, Tailwind CSS, and Alpine.js. Designed with a "Tropical Punch" aesthetic for students at Universitas Ciputra Surabaya.
 
 ## ✨ Features
-* **Live Search**: Search tasks in real-time with debouncing logic.
-* **Modular Design**: Clean code structure using Blade Components (Header, Footer, SearchBar, Card).
-* **Instant Modals**: Create and Edit tasks via Alpine.js pop-ups (No page refresh).
+* **Search**: Search tasks based on title, category.
 * **Category Grouping**: Tasks automatically grouped by Status (On Going, Pending, Completed).
-* **Vibrant UI**: Custom "Tropical Punch" color palette with Poppins typography.
 
 ---
 
