@@ -12,8 +12,8 @@ A vibrant and modern task management application built with Laravel 11, Tailwind
 Follow these steps to get the project running on your local machine:
 
 ### 1. Clone the Repository
-git clone https://github.com/yourusername/taskify-tropical.git
-cd taskify-tropical
+git clone https://github.com/prisciliaking/task-management.git
+cd task-management
 
 ### 2. Install Dependencies
 composer install
@@ -25,7 +25,7 @@ cp .env.example .env
 php artisan key:generate
 
 ### 4. Database & Session Configuration
-1. Buat database baru (misal: taskify_db) di MySQL/XAMPP.
+1. Buat database baru (misal: taskmanager) di MySQL/XAMPP.
 2. Update .env file:
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
@@ -71,11 +71,9 @@ Akses aplikasi di http://127.0.0.1:8000 atau http://127.0.0.1:9999.
 ## 🛠️ Tech Stack
 * Framework: Laravel 11
 * Styling: Tailwind CSS
-* Interactions: Alpine.js
-* Icons: Heroicons
+* Interactions: Js
 * Typography: Poppins (Google Fonts)
 
 ---
 
 **Made with ❤️ by Priscilia King**
-Universitas Ciputra Surabaya
